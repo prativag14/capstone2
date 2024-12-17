@@ -59,9 +59,9 @@ db.once("open", ()=> console.log("Now connected to MongoDB Atlas."));
 
 
 // [SECTION] Backend Routes
-app.use("/user", userRoutes);
-app.use("/product", productRoutes);
-app.use("/order", orderRoutes);
+app.use("/users", userRoutes);
+app.use("/products", productRoutes);
+app.use("/orders", orderRoutes);
 app.use("/cart", cartRoutes);
 
 
