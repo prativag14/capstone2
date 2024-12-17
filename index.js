@@ -12,10 +12,10 @@ const session = require('express-session');
 const cors = require("cors");
 
 // [SECTION] Routes
-const userRoutes = require("./routes/user");
-const cartRoutes = require("./routes/cart");
-const productRoutes = require("./routes/product");
-const orderRoutes = require("./routes/order");
+const userRoutes = require("./routes/user.js");
+const cartRoutes = require("./routes/cart.js");
+const productRoutes = require("./routes/product.js");
+const orderRoutes = require("./routes/order.js");
 
 dotenv.config();
 
@@ -29,13 +29,13 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 
-const corsOptions = {
+/*const corsOptions = {
     origin: ['http://localhost:9000'],
     credentials: true,
     optionsSuccessStatus: 200 
-};
+};*/
 
-app.use(cors(corsOptions));
+app.use(cors());
 
 //session is a way to store information about a user across different request
 app.use(session({

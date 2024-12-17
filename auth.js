@@ -4,12 +4,6 @@ const jwt = require("jsonwebtoken");
 const dotenv = require("dotenv");
 dotenv.config();
 
-// Json web token
-	//json web toke or JWT is a way of securely passing information from the server to the client or to the other part of the severs
-	//information is kept secure through the use of the secret code
-	//only the system that knows the secret code can decode the encrypted infromation.
-	//only the person who knows the secret code can open the JWT
-
 
 // [SECTION] Token Creation
 module.exports.createAccessToken = (user) =>{
