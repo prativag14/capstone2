@@ -1,0 +1,37 @@
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NDJjOWU1NTdiOTdhMDUxOTAyNzgxYyIsImVtYWlsIjoicmFuZG9tYWRtaW5AbWFpbC5jb20iLCJpYXQiOjE3MzI0MzEwOTd9.u6laXtkMfrGzoJgI7jLgwDGtGAP0dBjOpo-EMS8svr8
+
+Admin
+{
+    "email": "randomnepali@mail.com",
+    "password":"randomnepali"
+}
+{
+    "message": "User logged in successfully",
+    "access": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NDJjYTQxNTdiOTdhMDUxOTAyNzgxZSIsImVtYWlsIjoicmFuZG9tbmVwYWxpQG1haWwuY29tIiwiaWF0IjoxNzMyNTExNzMxfQ.UoBZm1QM4mCjkM_5jFHowHq0UUfbi5zeBSrbM1emdyg"
+}
+
+{
+    "firstName":"this",
+    "lastName":"admin",
+    "email":"thisisadmin@mail.com",
+    "password":"isadmin1",
+    "mobileNo": 98765433221,
+    "isAdmin": true
+}
+
+ "message": "User registered successfully",
+    "user": {
+        "firstName": "this",
+        "lastName": "admin",
+        "mobileNo": 98765433221,
+        "email": "thisisadmin@mail.com",
+        "password": "$2b$08$5hwWsy3J.w2wRJ1NzWqbhOQXF.Pn1sk9GJFtj2Jwz0Gib3oTCTp5u",
+        "_id": "67440e4aaeef630c7eac7f95",
+        "__v": 0
+    }
+}
+{
+    "message": "User logged in successfully",
+    "access": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NDQwZTRhYWVlZjYzMGM3ZWFjN2Y5NSIsImVtYWlsIjoidGhpc2lzYWRtaW5AbWFpbC5jb20iLCJpYXQiOjE3MzI1MTM2MDd9.0dyyrmURG_bYQAronQyxc6_X6ivRvcr8nhVRVMvWZ2A"
+}
+
