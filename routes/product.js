@@ -25,8 +25,7 @@ router.patch(
 );
 
 // Archive the product
-router.patch(
-  "/:productId/archive",
+router.patch( "/:productId/archive",
   verify,
   verifyAdmin,
   productController.archiveProduct

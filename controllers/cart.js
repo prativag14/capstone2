@@ -2,6 +2,7 @@
 //[SECTION] Activity: Dependencies and Modules
 const Cart = require("../models/Cart");
 const Order = require("../models/Order");
+const Product = require("../models/Product");
 const User = require("../models/User");
 const auth = require("../auth");
 const { errorHandler } = require("../auth.js");
@@ -163,7 +164,53 @@ module.exports.updateCart = async (req, res) => {
   }
 };
 //
-module.exports.removefromCart = async (req, res) => {
+/*module.exports.removefromCart = async (req, res) => {
+  try {
+    // Extract user ID from the validated JWT token
+    const userId = req.user.id;
+    const { productId } = req.params;
+
+    // Find the user's cart
+    let cart = await Cart.findOne({ userId });
+
+    if (!cart) {
+      // If no cart is found, send a message
+      return res.status(404).json({ message: "No cart found for this user" });
+    }
+
+    // Find the product in the cart's items
+    const productIndex = cart.cartItems.findIndex(
+      (item) => item.productId === productId
+    );
+
+    if (productIndex !== -1) {
+      // Remove the product from the cart
+      cart.cartItems.splice(productIndex, 1);
+
+      // Recalculate the total price
+      cart.totalPrice = cart.cartItems.reduce(
+        (total, item) => total + item.subtotal,
+        0
+      );
+
+      // Save the cart
+      await cart.save();
+
+      return res.status(200).json({
+        message: "Items removed from cart successfully",
+        cart,
+      });
+    } else {
+      // If the product is not found in the cart, send a message
+      return res.status(404).json({ message: "Items not found in cart" });
+    }
+  } catch (error) {
+    return res
+      .status(500)
+      .json({ message: "An error occurred", error: error.message });
+  }
+};*/
+module.exports.removeFromCart = async (req, res) => {
   try {
     // Extract user ID from the validated JWT token
     const userId = req.user.id;
@@ -209,6 +256,7 @@ module.exports.removefromCart = async (req, res) => {
       .json({ message: "An error occurred", error: error.message });
   }
 };
+
 //Clear cart
 module.exports.clearCart = async (req, res) => {
   try {
@@ -249,5 +297,5 @@ module.exports.clearCart = async (req, res) => {
   }
 };
 
-// search product
+
 

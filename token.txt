@@ -35,3 +35,36 @@ Admin
     "access": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NDQwZTRhYWVlZjYzMGM3ZWFjN2Y5NSIsImVtYWlsIjoidGhpc2lzYWRtaW5AbWFpbC5jb20iLCJpYXQiOjE3MzI1MTM2MDd9.0dyyrmURG_bYQAronQyxc6_X6ivRvcr8nhVRVMvWZ2A"
 }
 
+{
+    "firstName":"thhis",
+    "lastName":"aadmin",
+    "email":"thisissadmin@mail.com",
+    "password":"isadminone",
+    "mobileNo": 98785433221,
+    "isAdmin": true
+}
+
+{
+    "message": "User registered successfully",
+    "user": {
+        "firstName": "thhis",
+        "lastName": "aadmin",
+        "mobileNo": 98785433221,
+        "email": "thisissadmin@mail.com",
+        "password": "$2b$08$VeuxQ4tQwiRoJ9UpkzFhTO3/ukXwKF5/Hq668AbNtLH29q28FOrfe",
+        "_id": "676276df4e15a09ce37d3680",
+        "__v": 0
+    }
+}
+{
+   
+    "email":"thisissadmin@mail.com",
+    "password":"isadminone"
+}
+{
+    "message": "User logged in successfully",
+    "access": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NjI3NmRmNGUxNWEwOWNlMzdkMzY4MCIsImVtYWlsIjoidGhpc2lzc2FkbWluQG1haWwuY29tIiwiaWF0IjoxNzM0NTA3MTkwfQ.QkHhp_iYWmMBil5jSvlpJDDUSXrxPs8cppkJ3AXV4Co"
+}
+
+
+

@@ -14,7 +14,8 @@ const userSchema = new mongoose.Schema({
         required: [true, 'Mobile number is Required']
     },
     isAdmin: {
-        type: Boolean
+        type: Boolean,
+        required: [false, 'isAdmin is not required']
     },
     email: {
         type: String,
